@@ -1,0 +1,37 @@
+components:
+  schemas:
+    Error:
+      type: object
+openapi: 3.0.1
+info:
+  title: Test
+  version: 1.0
+paths:
+  /foo:
+    put:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: './A.yaml#/components/schemas/TestType'
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Error condition
+  /bar:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: './B.yaml#/components/schemas/TestType'
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Error condition

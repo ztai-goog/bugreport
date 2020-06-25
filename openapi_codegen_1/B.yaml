@@ -1,0 +1,4 @@
+components:
+  schemas:
+    TestType:
+      $ref: './C.yaml#/components/schemas/TestType'
