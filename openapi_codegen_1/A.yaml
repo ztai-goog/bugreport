@@ -1,4 +1,7 @@
 components:
   schemas:
     TestType:
-      type: string
+      type: object
+      properties:
+        message:
+          type: string

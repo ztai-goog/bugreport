@@ -1,4 +1,5 @@
 components:
   schemas:
     TestType:
-      $ref: './C.yaml#/components/schemas/TestType'
+      anyOf:
+      - $ref: './C.yaml#/components/schemas/TestType'

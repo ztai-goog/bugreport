@@ -2,3 +2,6 @@ components:
   schemas:
     TestType:
       type: object
+      properties:
+        msg:
+          type: string
